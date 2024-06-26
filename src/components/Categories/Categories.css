@@ -1,0 +1,17 @@
+.scrollable-strip {
+    display: flex;
+    overflow-x: scroll;
+
+    gap: 23px;
+}
+
+.scrollable-strip::-webkit-scrollbar {
+    display: none;
+}
+
+
+.scrollable img {
+    overflow: hidden;
+    width: max(19vh, 190px);
+
+}

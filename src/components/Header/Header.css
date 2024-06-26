@@ -1,0 +1,104 @@
+.headerrapper {
+  background-color: red;
+  height: 80vh;
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+ .headerrapper .image {
+  height: 100%;
+  width: 100%;
+   
+  display: flex;
+  object-position: top;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.headerrapper::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgb(13, 11, 11) 10%, rgba(239, 36, 0, 0.178) 50%, rgb(3, 3, 3) 90%);
+  z-index: 1;
+  position: absolute;
+}
+
+.headerrapper .image img {
+  object-fit: cover;
+  padding: 23px;
+  height: 100%;
+}
+
+
+.infoofheader {
+  padding: 23px;
+  position: absolute;
+  top: 30%;
+  color: white;
+  gap: 40px;
+  z-index: 2;
+}
+
+.infoofheader h1 {
+  width: 60%;
+  font-size: 5vmax;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  color: white;
+}
+
+/* .infoofheader button {
+  height: fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  display: flex;
+  margin: auto;
+  padding: 6px 8px;
+  border-radius: 23px;
+  border: none;
+  background-color: rgb(138, 42, 25);
+  color: white;
+} */
+
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-of-header {
+  display: flex;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+}
+
+.slider-of-header::-webkit-scrollbar {
+  display: none;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}

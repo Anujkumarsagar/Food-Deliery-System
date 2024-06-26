@@ -1,0 +1,16 @@
+.HeadingofRestaurent {
+    font-size: xx-large;
+    margin-top: 2vh;
+    /* color: tomato; */
+    /* color: #d70000; */
+    position: absolute;
+    z-index: 6;
+    font-weight: 600;
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /* text-decoration: underline; */
+}

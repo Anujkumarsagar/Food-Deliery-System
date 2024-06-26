@@ -1,0 +1,20 @@
+button {
+    
+   
+    width: fit-content;
+    padding: 1% 12%;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 10px;
+    border-color: var(--color);
+    background-color: rgba(255, 99, 71, 0);
+    transition: all 0.4s;
+   
+}
+
+button:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: var(--color);
+    box-shadow: inset 2px 2px 2px 0px white;
+    border: 1px solid var(--color);
+}

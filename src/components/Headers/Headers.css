@@ -1,0 +1,82 @@
+/* Headers.css */
+.slider-container {
+  position: relative;
+
+  overflow: hidden;
+}
+.heaader-cover{
+  overflow: hidden;
+}
+
+
+.slider-of-header {
+  display: flex;
+  
+  scroll-behavior: smooth;
+}
+
+.slider-of-header::-webkit-scrollbar {
+  display: none;
+}
+
+.headerrapper {
+  height: 80vh;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px; /* Add margin between headers */
+}
+
+.headerrapper.image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.headerrapper::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgb(13, 11, 11) 10%, rgba(239, 36, 0, 0.178) 50%, rgb(3, 3, 3) 90%);
+  z-index: 1;
+  position: absolute;
+}
+
+.image img {
+  object-fit: cover;
+  padding: 23px;
+  height: 100%;
+}
+
+.infoofheader {
+  padding: 23px;
+  position: absolute;
+  top: 30%;
+  color: white;
+  z-index: 2;
+}
+
+.infoofheader h1 {
+  width: 60%;
+  font-size: 5vmax;
+  font-weight: 700;
+  color: white;
+}
+
+.infoofheader p {
+  width: 80%; /* Adjust width as needed */
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.infoofheader button {
+  padding: 8px 55px;
+  color: white;
+  font-size: 1rem ;
+  font-weight: 600;
+
+}

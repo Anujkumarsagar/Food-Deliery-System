@@ -1,0 +1,56 @@
+.login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 60%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-popup-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #888;
+}
+
+.close:hover {
+    color: #555;
+}
+
+.login-popup h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login-popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-popup form label {
+    margin-bottom: 8px;
+}
+
+.login-popup form input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+

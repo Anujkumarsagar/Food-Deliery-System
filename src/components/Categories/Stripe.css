@@ -1,0 +1,13 @@
+
+.scrollable
+
+.shadow-for-strip {
+    box-shadow: outset 10px 10px 10px black, inset 10px 10px 10px black;
+}
+
+.outline{
+    border-radius: 10px;
+    padding: 2px;
+    border-top:  2px solid var(--color);
+    border-bottom:  2px solid var(--color);
+}
